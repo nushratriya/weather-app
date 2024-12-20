@@ -15,6 +15,13 @@ function getWeather() {
   document.getElementById('location').innerText = '';
   document.getElementById('error-message').innerText = '';
 
+  // Send event to Google Analytics with the city name as event label
+  gtag('event', 'search', {
+    'event_category': 'Weather App',
+    'event_label': city, // The city entered by the user
+    'value': 1 // Optional: could represent a value (e.g., search action)
+  });
+
   // Fetch weather data from API
   fetch(apiUrl)
     .then(response => {
