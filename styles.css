@@ -8,9 +8,9 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-  }
-  
-  .weather-container {
+}
+
+.weather-container {
     text-align: center;
     background-color: white;
     padding: 30px;
@@ -18,29 +18,29 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     max-width: 100%;  
-  }
-  
-  h1 {
+}
+
+h1 {
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .search-container {
+}
+
+.search-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-  }
-  
-  #city {
+}
+
+#city {
     padding: 12px;
     margin-right: 10px;
     border: 2px solid #77c4ee; 
     border-radius: 4px;
     font-size: 16px;
     width: 200px;  
-  }
-  
-  #search-button {
+}
+
+#search-button {
     padding: 12px;
     background-color: #77c4ee; 
     color: white;
@@ -49,22 +49,47 @@ body {
     cursor: pointer;
     font-size: 16px;
     width: 120px;  
-  }
-  
-  #search-button:hover {
+}
+
+#search-button:hover {
     background-color: #5FA7C7; 
-  }
-  
-  .info {
+}
+
+.info {
     margin: 12px 0;
     font-size: 18px;
     color: #333;
-    
-  }
-  
-  .error-message {
+}
+
+.error-message {
     color: rgb(230, 46, 46);
     font-size: 16px;
     margin-bottom: 10px;
-  }
+}
 
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    .weather-container {
+        width: 90%;  /* Adjust width for smaller screens */
+        padding: 20px;  /* Adjust padding for mobile */
+    }
+
+    h1 {
+        font-size: 24px;  /* Smaller font for mobile */
+        margin-bottom: 15px;
+    }
+
+    #city {
+        width: 150px;  /* Adjust the width for mobile */
+        font-size: 14px;
+    }
+
+    #search-button {
+        width: 100px;  /* Adjust button size for mobile */
+        font-size: 14px;
+    }
+
+    .info {
+        font-size: 16px;  /* Smaller font size on mobile */
+    }
+}
