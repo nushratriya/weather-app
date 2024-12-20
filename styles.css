@@ -67,29 +67,28 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Media Queries for Mobile */
 @media (max-width: 600px) {
     .weather-container {
-        width: 90%;  /* Adjust width for smaller screens */
-        padding: 20px;  /* Adjust padding for mobile */
+        width: 90%;  
+        padding: 20px;  
     }
 
     h1 {
-        font-size: 24px;  /* Smaller font for mobile */
+        font-size: 24px;  
         margin-bottom: 15px;
     }
 
     #city {
-        width: 150px;  /* Adjust the width for mobile */
+        width: 150px;  
         font-size: 14px;
     }
 
     #search-button {
-        width: 100px;  /* Adjust button size for mobile */
+        width: 100px;  
         font-size: 14px;
     }
 
     .info {
-        font-size: 16px;  /* Smaller font size on mobile */
+        font-size: 16px;  
     }
 }
